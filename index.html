@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test RequireJS</title> 
+    </head>
+    <body>
+        <script data-main="js/config" src="js/lib/require.js"></script>
+        <script>
+            //alert('Before require keyboard');
+            require(['config'], function(){
+               require(['index']);
+                //alert('after require keyword');
+            });
+        </script>
+    </body>
+</html>
